@@ -2,10 +2,6 @@ package org.example;
 
 public class Main {
 
-    public static void main(String[] args) {
-        // Şimdilik boş kalabilir
-    }
-
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
         if (hourOfDay < 0 || hourOfDay > 23) {
             return false;
@@ -37,6 +33,13 @@ public class Main {
         }
         return radius * radius * Math.PI;
     }
+
+    // ✅ SADECE 1 TANE main
+    public static void main(String[] args) {
+        System.out.println(shouldWakeUp(true, 1));
+        System.out.println(hasTeen(9, 99, 19));
+        System.out.println(isCatPlaying(false, 35));
+        System.out.println(area(5.0, 4.0));
+        System.out.println(area(5.0));
+    }
 }
-
-
