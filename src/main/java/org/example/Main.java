@@ -1,4 +1,5 @@
 package org.example;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 public class Main {
 
@@ -32,6 +33,10 @@ public class Main {
             return -1;
         }
         return radius * radius * Math.PI;
+    }
+    @ExtendWith(ResultAnalyzer.class)
+    public class MainTest {
+        // testler
     }
 
     // ✅ SADECE 1 TANE main

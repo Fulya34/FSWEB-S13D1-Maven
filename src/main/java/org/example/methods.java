@@ -43,7 +43,9 @@ public class methods {
         if (radius < 0) {
             return -1;
         }
-        return radius * radius * Math.PI;
+        double result = radius * radius * Math.PI;
+        return Math.round(result * 100000.0) / 100000.0;
+
     }
 
 }

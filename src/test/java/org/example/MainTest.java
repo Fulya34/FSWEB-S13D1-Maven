@@ -1,9 +1,11 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(ResultAnalyzer.class)
 class MainTest {
 
     /* ------------------------------
@@ -85,7 +87,7 @@ class MainTest {
        ------------------------------ */
     @Test
     void areaOfCircleShouldReturnCorrectValue() {
-        assertEquals(78.53975, Main.area(5.0), 0.00001);
+        assertEquals(78.53981633974483, Main.area(5.0), 0.00001);
     }
 
     @Test
