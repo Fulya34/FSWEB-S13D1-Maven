@@ -42,4 +42,5 @@ public class Main {
         System.out.println(area(5.0, 4.0));
         System.out.println(area(5.0));
     }
+
 }
